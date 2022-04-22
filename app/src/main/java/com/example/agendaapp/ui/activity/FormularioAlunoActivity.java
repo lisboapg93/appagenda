@@ -2,6 +2,7 @@ package com.example.agendaapp.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,6 +38,9 @@ public class FormularioAlunoActivity extends AppCompatActivity {
 
                 Aluno  alunoCriado= new Aluno(nome, telefone, email);
                 dao.salva(alunoCriado);
+
+                startActivity(new Intent(FormularioAlunoActivity.this,
+                        ListaAlunosActivity.class));
             }
         });
     }

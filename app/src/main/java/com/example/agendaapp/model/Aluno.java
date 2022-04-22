@@ -1,5 +1,8 @@
 package com.example.agendaapp.model;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 public class Aluno {
     private final String telefone;
     private String nome;
@@ -11,15 +14,9 @@ public class Aluno {
         this.email = email;
     }
 
-    public String getNome() {
+    @NonNull
+    @Override
+    public String toString() {
         return nome;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getTelefone() {
-        return telefone;
     }
 }
