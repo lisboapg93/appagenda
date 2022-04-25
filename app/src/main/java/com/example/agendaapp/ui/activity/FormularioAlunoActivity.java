@@ -41,6 +41,7 @@ public class FormularioAlunoActivity extends AppCompatActivity {
 
                 startActivity(new Intent(FormularioAlunoActivity.this,
                         ListaAlunosActivity.class));
+                finish();
             }
         });
     }
