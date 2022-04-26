@@ -5,8 +5,8 @@ import androidx.annotation.Nullable;
 
 public class Aluno {
     private final String telefone;
-    private String nome;
-    private String email;
+    private final String nome;
+    private final String email;
 
     public Aluno(String nome, String telefone, String email) {
         this.nome = nome;
